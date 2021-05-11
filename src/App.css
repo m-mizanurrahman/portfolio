@@ -1,38 +1,207 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+  --primary-white:#fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #ef4035;
+}
+
+body{
+  font-family: "Roboto Condensed" sans-serif;
+  /* background: url(./images/laptop-bg.png) ; */
+  background-color: #0A192F;
+}
+
+/*******************Navbar**********************/
+.logo{
+  width: 3rem;
+  /* height: 2rem; */
+}
+
+/****************** Menu Links *****************/
+nav a.nav-link {
+  font-size: 0.8rem;
+  letter-spacing: 0.0375px;
+  cursor:pointer;
+
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark) ;
+
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 4rem;
+}
+
+.navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/******************** Header ****************/
+.header-wraper{
+  position: relative;
+  /* background: url(./images/laptop-bg.png) no-repeat; */
+  background-size: cover;
+  background-position: center ;
+  height: 90vh;
+
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(max-width: 768px){
+  .main-info h1{
+    font-size: 1.5rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+    
+  }
+  
+}
+
+/******************** Typed Text ****************/
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+/******* header main offer*****/
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  text-decoration: none;
+  margin: 2rem;
+
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+
+}
+
+/********** Position Js ********/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px){
+  .particles-canvas{
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.carousel img {
+  width: 100%;
+  height:100%;
+}
+
+
+.mh-skills .mh-professional-skill{
+  padding-right: 60px;
+  color: white;
+  
+}
+
+.mh-skills .mh-professional-skill h3{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.mh-professional-skills{
+  padding-left: 20%;
+
+}
+
+.mh-professional-skills h3 {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.mh-professional-progress li{
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  width: 48%;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+.mh-progress {
+  margin-bottom: 10px;
+  font: 900 1.114285/1 Cinzerl, cursive;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mh-progress .progressbar-text{
+  color: inherit !important;
+  font-family: 'Poppins', sans-serif; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.progress.progress-line{
+  height: 10px;
+  margin-right: 60px;
+}
+
+.progress.progress-line .progress-text{
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 60px;
+  transform: translateY(-35%);
+  text-align: center;
+  font-family: 'Poppins', sans-serif; 
+
 }
