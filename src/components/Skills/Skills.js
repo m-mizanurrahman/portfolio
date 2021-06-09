@@ -9,8 +9,8 @@ const Skills = () => {
                 <div class="card m-1">
                     <div class="card-body">
                         <h5 class="card-title">Expertise</h5>
-                        <li>React. </li>
-                        <li>Javascript </li>
+                        <li>React.js, JavaScript, ES6, Firebase </li>
+                        <li>Rest API, MongoDB, Heroku </li>
                         <li>HTML, CSS, Bootstrap </li>
 
                     </div>
@@ -18,18 +18,27 @@ const Skills = () => {
                 <div class="card m-1">
                     <div class="card-body">
                         <h5 class="card-title">Comfortable</h5>
-                        <li>Firebase</li>
-                        <li>Mongodb, Heroku</li>
-                        <li>NodeJS, ExpressJs, Netlify</li>
+                        <li>React Native, Redux</li>
+                        <li>Node.js, Express.js</li>
+                        <li>Material UI, Netlify</li>
+                    </div>
+                </div>
+
+                <div class="card m-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Familiar</h5>
+                        <li>Type Script, Webpack, GraphQL</li>
+                        <li>Agile Project Management: Jira.</li>
+                        <li>Testing: Jest, Figma, PSD</li>
                     </div>
                 </div>
 
                 <div class="card m-1">
                     <div class="card-body">
                         <h5 class="card-title">Tools</h5>
-                        <li>Git</li>
-                        <li>VSCode</li>
-                        <li>Chrome Dev Tool</li>
+                        <li>GitHub</li>
+                        <li>VSCode, Postman</li>
+                        <li>Chrome Dev Tool </li>
 
                     </div>
                 </div>
